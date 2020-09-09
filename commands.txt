@@ -1,2 +1,9 @@
 #npm install -g create-react-app
 #npx create-react-app ravenous
+
+To move the App.js to components folder:
+1)npm run eject //this will add "config" and "scripts" folder
+2)in "config/paths.js" change this  appIndexJs: resolveModule(resolveApp, 'src/index')
+to appIndexJs: resolveModule(resolveApp, 'src/components/App/index')
+3)move these files to src/components/App folder: 
+App.js,App.css,index.css,index.js

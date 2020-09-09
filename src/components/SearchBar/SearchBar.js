@@ -5,7 +5,7 @@ const sortByOptions={
     'Best Match':'best_match',
     'Highest Rated':'rating',
     'Most Reviewed':'review_count'
-}
+};
 class SearchBar extends React.Component{
    renderSortByOptions(){
        //store values of the sortByOptions 
@@ -20,7 +20,7 @@ class SearchBar extends React.Component{
         <div className="SearchBar">
   <div className="SearchBar-sort-options">
     <ul>
-      {this.renderSortByOptions} 
+      {this.renderSortByOptions()} 
     </ul>
   </div>
   <div className="SearchBar-fields">
@@ -35,3 +35,4 @@ class SearchBar extends React.Component{
     }
 }
 export default SearchBar;
+
